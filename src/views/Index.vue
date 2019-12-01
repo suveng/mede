@@ -1,18 +1,22 @@
 <template>
     <div class="index">
+        <!--回到顶部按钮-->
+        <!--注意 要放到div 第一位-->
+        <el-backtop/>
+
         <el-container>
             <el-aside>
                 <el-row>
-                    <el-link>项目一览<i class="el-icon-view el-icon--right"></i></el-link>
+                    <el-link>项目一览<i class="el-icon-view el-icon--right"/></el-link>
                 </el-row>
                 <el-row>
-                    <el-link>联 系 我<i class="el-icon-view el-icon--right"></i></el-link>
+                    <el-link>联 系 我<i class="el-icon-view el-icon--right"/></el-link>
                 </el-row>
                 <el-row>
-                    <el-link>技术介绍<i class="el-icon-view el-icon--right"></i></el-link>
+                    <el-link>技术介绍<i class="el-icon-view el-icon--right"/></el-link>
                 </el-row>
                 <el-row>
-                    <el-link>工作历程<i class="el-icon-view el-icon--right"></i></el-link>
+                    <el-link>工作历程<i class="el-icon-view el-icon--right"/></el-link>
                 </el-row>
             </el-aside>
 
@@ -34,9 +38,7 @@
                     <el-row>row</el-row>
                 </el-main>
             </el-container>
-
         </el-container>
-
     </div>
 </template>
 

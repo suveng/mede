@@ -1,5 +1,7 @@
 # mede
 
+- vue-cli 3.0.0
+
 ## Project setup
 ```
 npm install
