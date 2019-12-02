@@ -5,76 +5,55 @@
         <el-backtop/>
 
         <el-container>
-            <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-                <el-menu  :default-openeds="['1']">
-                    <el-submenu index="1">
-                        <template slot="title"><i class="el-icon-message"></i>项目一览</template>
-                        <el-menu-item-group>
-                            <el-menu-item index="1-1">简历</el-menu-item>
-                            <el-menu-item index="1-2">商城</el-menu-item>
-                        </el-menu-item-group>
-                    </el-submenu>
-                    <el-submenu index="2">
-                        <template slot="title"><i class="el-icon-message"></i>联 系 我</template>
-                        <el-menu-item-group>
-                            <el-menu-item index="2-1">邮箱</el-menu-item>
-                            <el-menu-item index="2-2">github</el-menu-item>
-                            <el-menu-item index="2-3">csdn</el-menu-item>
-                            <el-menu-item index="2-4">博客园</el-menu-item>
-                        </el-menu-item-group>
-                    </el-submenu>
-                    <el-submenu index="3">
-                        <template slot="title"><i class="el-icon-message"></i>技术介绍</template>
-                    </el-submenu>
-                    <el-submenu index="4">
-                        <template slot="title"><i class="el-icon-message"></i>工作历程</template>
-                    </el-submenu>
-                    <el-submenu index="2">
-                        <template slot="title"><i class="el-icon-message"></i>联 系 我</template>
-                        <el-menu-item-group>
-                            <el-menu-item index="2-1">邮箱</el-menu-item>
-                            <el-menu-item index="2-2">github</el-menu-item>
-                            <el-menu-item index="2-3">csdn</el-menu-item>
-                            <el-menu-item index="2-4">博客园</el-menu-item>
-                        </el-menu-item-group>
-                    </el-submenu>
-                    <el-submenu index="2">
-                        <template slot="title"><i class="el-icon-message"></i>联 系 我</template>
-                        <el-menu-item-group>
-                            <el-menu-item index="2-1">邮箱</el-menu-item>
-                            <el-menu-item index="2-2">github</el-menu-item>
-                            <el-menu-item index="2-3">csdn</el-menu-item>
-                            <el-menu-item index="2-4">博客园</el-menu-item>
-                        </el-menu-item-group>
-                    </el-submenu>
-                    <el-submenu index="2">
-                        <template slot="title"><i class="el-icon-message"></i>联 系 我</template>
-                        <el-menu-item-group>
-                            <el-menu-item index="2-1">邮箱</el-menu-item>
-                            <el-menu-item index="2-2">github</el-menu-item>
-                            <el-menu-item index="2-3">csdn</el-menu-item>
-                            <el-menu-item index="2-4">博客园</el-menu-item>
-                        </el-menu-item-group>
-                    </el-submenu>
-                </el-menu>
-            </el-aside>
-
+             <el-aside>
+                    <el-menu :default-openeds="['1']">
+                        <el-submenu index="1">
+                            <template slot="title"><i class="el-icon-message"></i><span class="max-text">项目一览</span>
+                            </template>
+                            <el-menu-item-group>
+                                <el-menu-item index="1-1"><i class="el-icon-message"></i><span
+                                        class="max-text">校招</span>
+                                </el-menu-item>
+                                <el-menu-item index="1-2"><i class="el-icon-message"></i><span
+                                        class="max-text">商城</span>
+                                </el-menu-item>
+                            </el-menu-item-group>
+                        </el-submenu>
+                        <el-submenu index="2">
+                            <template slot="title"><i class="el-icon-message"></i><span class="max-text">联 系 我</span>
+                            </template>
+                            <el-menu-item-group>
+                                <el-menu-item index="2-1"><i class="el-icon-message"></i><span
+                                        class="max-text">邮箱</span>
+                                </el-menu-item>
+                                <el-menu-item index="2-2"><i class="el-icon-message"></i><span
+                                        class="max-text">github</span></el-menu-item>
+                                <el-menu-item index="2-3"><i class="el-icon-message"></i><span
+                                        class="max-text">csdn</span>
+                                </el-menu-item>
+                                <el-menu-item index="2-4"><i class="el-icon-message"></i><span
+                                        class="max-text">博客园</span>
+                                </el-menu-item>
+                            </el-menu-item-group>
+                        </el-submenu>
+                    </el-menu>
+                </el-aside>
             <el-container>
                 <el-main>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
-                    <el-row>row</el-row>
+                    <el-row>row1</el-row>
+                    <el-row>row2</el-row>
+                    <el-row>row3</el-row>
+                    <el-row>row4</el-row>
+                    <el-row>row5</el-row>
+                    <el-row>row6</el-row>
+                    <el-row>row7</el-row>
+                    <el-row>row8</el-row>
+                    <el-row>row9</el-row>
+                    <el-row>row10</el-row>
+                    <el-row>row11</el-row>
+                    <el-row>row12</el-row>
+                    <el-row>row14</el-row>
+                    <el-row>row15</el-row>
                 </el-main>
             </el-container>
         </el-container>
@@ -89,23 +68,5 @@
 </script>
 
 <style scoped>
-
-    .index {
-        min-width: 100%;
-        min-height: 100%;
-    }
-
-    .el-aside {
-        background-color: #D3DCE6;
-        color: #333;
-        text-align: center;
-        line-height: 100px;
-    }
-
-    .el-main {
-        background-color: #E9EEF3;
-        color: #333;
-        text-align: center;
-        line-height: 160px;
-    }
+    @import "../assets/css/index.css";
 </style>
