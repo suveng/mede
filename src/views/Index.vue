@@ -5,19 +5,58 @@
         <el-backtop/>
 
         <el-container>
-            <el-aside>
-                <el-row>
-                    <el-link>项目一览<i class="el-icon-view el-icon--right"/></el-link>
-                </el-row>
-                <el-row>
-                    <el-link>联 系 我<i class="el-icon-view el-icon--right"/></el-link>
-                </el-row>
-                <el-row>
-                    <el-link>技术介绍<i class="el-icon-view el-icon--right"/></el-link>
-                </el-row>
-                <el-row>
-                    <el-link>工作历程<i class="el-icon-view el-icon--right"/></el-link>
-                </el-row>
+            <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
+                <el-menu  :default-openeds="['1']">
+                    <el-submenu index="1">
+                        <template slot="title"><i class="el-icon-message"></i>项目一览</template>
+                        <el-menu-item-group>
+                            <el-menu-item index="1-1">简历</el-menu-item>
+                            <el-menu-item index="1-2">商城</el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                    <el-submenu index="2">
+                        <template slot="title"><i class="el-icon-message"></i>联 系 我</template>
+                        <el-menu-item-group>
+                            <el-menu-item index="2-1">邮箱</el-menu-item>
+                            <el-menu-item index="2-2">github</el-menu-item>
+                            <el-menu-item index="2-3">csdn</el-menu-item>
+                            <el-menu-item index="2-4">博客园</el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                    <el-submenu index="3">
+                        <template slot="title"><i class="el-icon-message"></i>技术介绍</template>
+                    </el-submenu>
+                    <el-submenu index="4">
+                        <template slot="title"><i class="el-icon-message"></i>工作历程</template>
+                    </el-submenu>
+                    <el-submenu index="2">
+                        <template slot="title"><i class="el-icon-message"></i>联 系 我</template>
+                        <el-menu-item-group>
+                            <el-menu-item index="2-1">邮箱</el-menu-item>
+                            <el-menu-item index="2-2">github</el-menu-item>
+                            <el-menu-item index="2-3">csdn</el-menu-item>
+                            <el-menu-item index="2-4">博客园</el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                    <el-submenu index="2">
+                        <template slot="title"><i class="el-icon-message"></i>联 系 我</template>
+                        <el-menu-item-group>
+                            <el-menu-item index="2-1">邮箱</el-menu-item>
+                            <el-menu-item index="2-2">github</el-menu-item>
+                            <el-menu-item index="2-3">csdn</el-menu-item>
+                            <el-menu-item index="2-4">博客园</el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                    <el-submenu index="2">
+                        <template slot="title"><i class="el-icon-message"></i>联 系 我</template>
+                        <el-menu-item-group>
+                            <el-menu-item index="2-1">邮箱</el-menu-item>
+                            <el-menu-item index="2-2">github</el-menu-item>
+                            <el-menu-item index="2-3">csdn</el-menu-item>
+                            <el-menu-item index="2-4">博客园</el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                </el-menu>
             </el-aside>
 
             <el-container>
