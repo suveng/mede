@@ -24,6 +24,7 @@
         components: {},
         //数据模型,校验等
         data() {
+            // 定义一个自定义函数,给校验规则使用,用于校验重复密码是否一致
             var validatePass = (rule, value, callback) => {
                 if (value !== this.registerUser.password) {
                     callback(new Error("两次输入密码不一致!"));
