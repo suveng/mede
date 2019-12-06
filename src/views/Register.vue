@@ -56,7 +56,12 @@
                 this.$refs[formName].validate(valid => {
                     //提交注册时,去校验表单字段, valid是校验结果
                     if (valid) {
-                        alert("表单校验通过");
+                        // alert("表单校验通过");
+                        this.$axios.get("/index").then(res => {
+                            console.log("成功")
+                        },error => {
+                            console.log("失败")
+                        })
                     } else {
                         //校验失败
                         console.log("提交表单: 校验失败");
