@@ -63,14 +63,22 @@
         mounted() {
             //设置高度
             this.getMdHeight();
+            //监听窗口大小
+            const that = this;
+            window.onresize = () => {
+                return (() => {
+                    console.log("改变窗口,自适应");
+                    this.getMdHeight();
+                })()
+            }
         },
         methods: {
             getMdHeight() {
-                let windowHeight = window.innerHeight - 80;
-                console.log(windowHeight);
-                this.mdHeight = windowHeight;
-            }
-        }
+                // console.log(windowHeight);
+                this.mdHeight = window.innerHeight - 80;
+            },
+        },
+
 
     }
 </script>
