@@ -40,7 +40,7 @@
             </el-aside>
             <el-container>
                 <el-main>
-                    <Markdown  />
+                    <Markdown :height="mdHeight"/>
                 </el-main>
             </el-container>
         </el-container>
@@ -54,7 +54,24 @@
         name: "index",
         components: {
             Markdown
+        },
+        data: function () {
+            return {
+                mdHeight: 1000
+            }
+        },
+        mounted() {
+            //设置高度
+            this.getMdHeight();
+        },
+        methods: {
+            getMdHeight() {
+                let windowHeight = window.innerHeight - 80;
+                console.log(windowHeight);
+                this.mdHeight = windowHeight;
+            }
         }
+
     }
 </script>
 
