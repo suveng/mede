@@ -37,7 +37,7 @@
 .index .el-container .el-main {
     background-color: #000000;
     color: #ffffff;
-    text-align: center;
+    /*text-align: center;*/
     line-height: 160px;
     max-height: 100vh;
 }
