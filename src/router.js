@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from "./views/Index";
+import MyContainer from "./views/myContainer";
+import Mall from "./views/mall";
 import NotFound from "./views/NotFound"
 import Register from "./views/Register";
+import School from "./views/school";
 import Nav from "./views/Nav";
 
 Vue.use(Router);
@@ -13,12 +16,11 @@ export default new Router({
     routes: [
         {
             path: '/',
-            redirect: Index
+            redirect: MyContainer
         },
         {
             path: '/index',
-            name: 'index',
-            component: Index
+            redirect: MyContainer
         },
         {
             path: '/register',
@@ -34,6 +36,20 @@ export default new Router({
             path: '*',
             name: 'notFound',
             component: NotFound
+        },
+        {
+            path: '/school',
+            name: 'school',
+            component: School
+        },
+        {
+            path: '/mall',
+            name: 'mall',
+            component: Mall
+        },{
+            path: '/myContainer',
+            name: 'myContainer',
+            component: MyContainer
         }
     ]
 })
