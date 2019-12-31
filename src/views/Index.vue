@@ -11,11 +11,9 @@
                         <template slot="title"><i class="el-icon-message"></i><span class="max-text">项目一览</span>
                         </template>
                         <el-menu-item-group>
-                            <el-menu-item index="1-1"><i class="el-icon-message"></i><span
-                                    class="max-text">校招</span>
+                            <el-menu-item index="1-1"><i class="el-icon-message"></i><router-link to="/school" class="link-class">校招</router-link>
                             </el-menu-item>
-                            <el-menu-item index="1-2"><i class="el-icon-message"></i><span
-                                    class="max-text">商城</span>
+                            <el-menu-item index="1-2"><i class="el-icon-message"></i><router-link to="/mall" class="link-class">商城</router-link>
                             </el-menu-item>
                         </el-menu-item-group>
                     </el-submenu>
@@ -38,11 +36,7 @@
                     </el-submenu>
                 </el-menu>
             </el-aside>
-            <el-container>
-                <el-main>
-                    <Markdown :height="mdHeight"/>
-                </el-main>
-            </el-container>
+            <router-view/>
         </el-container>
     </div>
 </template>
@@ -85,4 +79,17 @@
 
 <style scoped>
     @import "../assets/css/index.css";
+</style>
+<style>
+    .link-class{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #303133;
+    }
+    .link-class:hover{
+        text-decoration: none;
+        color: #303133;
+    }
 </style>
