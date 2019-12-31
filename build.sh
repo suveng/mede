@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+
 # 检查变量文件
 if [  ! -f docker.env ]; then
     echo '文件不存在,自动创建'
@@ -30,5 +31,7 @@ mv docker.2 docker.env
 tag=$host/$name:$profile-$new_version
 echo "$tag"
 
+# 构建
+npm run build
 
 docker build -t $tag .
